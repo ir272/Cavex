@@ -17,64 +17,37 @@ AI-powered dental X-ray analysis for detecting cavities and gum disease.
 
 ## Getting Started
 
-### Prerequisites
-
-- **Node.js** 18+ and npm
-- **Python** 3.9+
-- **pip** (Python package manager)
+**Prerequisites:** Node.js 18+ • Python 3.9+ • pip
 
 ### Installation
 
-#### 1. Clone the Repository
-
 ```bash
+# Clone repository
 git clone <repository-url>
 cd Gallery
-```
 
-#### 2. Set Up Backend
-
-```bash
-# Navigate to backend directory
+# Backend setup
 cd backend
-
-# Create virtual environment (recommended)
 python -m venv venv
-
-# Activate virtual environment
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
-
-# Install dependencies
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-```
 
-#### 3. Set Up Frontend
-
-```bash
-# Navigate back to root directory
+# Frontend setup
 cd ..
-
-# Install dependencies
 npm install
 ```
 
-### Running the Application
+### Running the App
 
-#### Terminal 1: Start Backend
-
+**Terminal 1 - Backend:**
 ```bash
 cd backend
-source venv/bin/activate  # If not already activated
+source venv/bin/activate
 python main.py
 ```
 
-#### Terminal 2: Start Frontend
-
+**Terminal 2 - Frontend:**
 ```bash
-# From project root
 npm run dev
 ```
 
