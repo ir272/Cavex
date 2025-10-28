@@ -1,0 +1,104 @@
+.upload-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.upload-area {
+  border: 2px dashed #cbd5e0;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #f7fafc;
+  cursor: pointer;
+}
+
+.upload-area:hover:not(.disabled) {
+  border-color: #4299e1;
+  background-color: #ebf8ff;
+}
+
+.upload-area.drag-active {
+  border-color: #4299e1;
+  background-color: #ebf8ff;
+  transform: scale(1.02);
+}
+
+.upload-area.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  color: #4299e1;
+}
+
+.upload-text {
+  font-size: 1.125rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.upload-link {
+  color: #4299e1;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: inherit;
+}
+
+.upload-link:hover:not(:disabled) {
+  color: #2c5282;
+}
+
+.upload-link:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.upload-hint {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.change-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.change-button:hover:not(:disabled) {
+  background-color: #2c5282;
+}
+
+.change-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
