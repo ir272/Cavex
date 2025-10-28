@@ -1,6 +1,9 @@
-# Dental Diagnosis AI
+# Cavex
 
 AI-powered dental X-ray analysis for detecting cavities and gum disease.
+
+<img width="1344" height="893" alt="image" src="https://github.com/user-attachments/assets/29411369-f1b7-4a50-ac46-47f0b8913793" />
+
 
 ## Features
 * Drag-and-drop X-ray image upload
