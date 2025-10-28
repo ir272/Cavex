@@ -1,33 +1,19 @@
 # Dental Diagnosis AI
 
-An AI-powered dental X-ray analysis application for detecting cavities and gum disease. Built with React, TypeScript, Vite, and FastAPI with TensorFlow/Keras for machine learning.
+AI-powered dental X-ray analysis for detecting cavities and gum disease.
 
 ## Features
+* Drag-and-drop X-ray image upload
+* ML-powered analysis with confidence scores
+* Visual heatmaps highlighting problem areas
+* Detects: Healthy teeth, Cavities, Gum Disease
+* Responsive modern UI
 
-- **Image Upload**: Drag-and-drop or click to upload dental X-ray images
-- **ML-Powered Analysis**: Uses a pre-trained MobileNetV2-based model for classification
-- **Real-time Results**: Instant diagnosis with confidence scores
-- **Visual Heatmaps**: Highlights problem areas on X-ray images
-- **Detailed Breakdown**: Shows confidence scores for all three categories:
-  - Healthy
-  - Cavity Detection
-  - Gum Disease Detection
-- **Modern UI**: Responsive design with gradient backgrounds and smooth animations
+## Tech Stack
 
-## Technology Stack
+**Frontend:** React 19 • TypeScript • Vite
 
-### Frontend
-- **React 19.1.1** - Latest React features with React Compiler
-- **TypeScript 5.9.3** - Type-safe development
-- **Vite 7.1.7** - Fast build tool and dev server
-- **CSS3** - Custom styling with modern CSS features
-
-### Backend
-- **FastAPI** - High-performance Python web framework
-- **TensorFlow 2.18** - Deep learning framework
-- **MobileNetV2** - Efficient CNN architecture (pre-trained on ImageNet)
-- **OpenCV** - Image preprocessing and enhancement
-- **Pillow** - Image validation and processing
+**Backend:** FastAPI • TensorFlow 2.18 • MobileNetV2 • OpenCV
 
 ## Getting Started
 
