@@ -167,74 +167,11 @@ The current model uses MobileNetV2 with ImageNet weights as a demo. For producti
 4. Fine-tune the model on your dataset
 5. Save weights with `save_model()`
 
-## Important Disclaimers
-
-⚠️ **Educational Purpose Only**: This application is for educational and demonstration purposes only.
+## Disclaimers
 
 ⚠️ **Not for Medical Use**: Do NOT use this tool for actual medical diagnosis. Always consult with a qualified dental professional.
 
 ⚠️ **Model Limitations**: The demo model is not trained on real dental X-ray data and should not be relied upon for any diagnostic purposes.
-
-## Development
-
-### Build for Production
-
-```bash
-# Build frontend
-npm run build
-
-# Preview production build
-npm run preview
-
-# Backend is production-ready by default
-```
-
-### Linting
-
-```bash
-npm run lint
-```
-
-### Type Checking
-
-```bash
-npm run build  # TypeScript compilation happens before Vite build
-```
-
-## Configuration
-
-### Backend Configuration
-Edit `backend/app/config.py` to modify:
-- Upload directory
-- Model path
-- Image size
-- Confidence thresholds
-- CORS origins
-
-### Frontend Configuration
-Edit `src/App.tsx` to change:
-- API URL (currently `http://localhost:8000`)
-
-## Troubleshooting
-
-### Backend Issues
-
-**ImportError: No module named 'tensorflow'**
-- Make sure you activated the virtual environment
-- Run `pip install -r requirements.txt`
-
-**CORS errors**
-- Check that the frontend URL is in `ALLOWED_ORIGINS` in `backend/app/config.py`
-
-### Frontend Issues
-
-**Cannot connect to backend**
-- Ensure backend is running on port 8000
-- Check API_URL in `src/App.tsx`
-
-**TypeScript errors**
-- Run `npm run build` to see detailed errors
-- Check that all imports use `type` keyword for type-only imports
 
 ## Future Enhancements
 
