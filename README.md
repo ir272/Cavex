@@ -29,33 +29,6 @@ An AI-powered dental X-ray analysis application for detecting cavities and gum d
 - **OpenCV** - Image preprocessing and enhancement
 - **Pillow** - Image validation and processing
 
-## Project Structure
-
-```
-Gallery/
-├── backend/                    # Python FastAPI backend
-│   ├── app/
-│   │   ├── models/            # ML model code
-│   │   │   └── dental_model.py
-│   │   ├── routes/            # API endpoints
-│   │   │   └── diagnosis.py
-│   │   ├── config.py          # Configuration
-│   │   └── preprocessing.py   # Image processing utilities
-│   ├── uploads/               # Uploaded images (gitignored)
-│   ├── sample_data/           # Sample dental X-rays
-│   ├── main.py               # FastAPI application
-│   └── requirements.txt      # Python dependencies
-├── src/                       # React frontend
-│   ├── components/           # React components
-│   │   ├── ImageUpload.tsx
-│   │   ├── DiagnosisResults.tsx
-│   │   └── *.css
-│   ├── types.ts             # TypeScript types
-│   ├── App.tsx              # Main application
-│   └── main.tsx             # Entry point
-└── package.json             # Node dependencies
-```
-
 ## Getting Started
 
 ### Prerequisites
@@ -104,8 +77,6 @@ npm install
 
 ### Running the Application
 
-You need to run both the backend and frontend servers.
-
 #### Terminal 1: Start Backend
 
 ```bash
@@ -114,21 +85,12 @@ source venv/bin/activate  # If not already activated
 python main.py
 ```
 
-The backend will start at `http://localhost:8000`
-
-- API docs available at: `http://localhost:8000/docs`
-- Health check: `http://localhost:8000/api/health`
-
 #### Terminal 2: Start Frontend
 
 ```bash
 # From project root
 npm run dev
 ```
-
-The frontend will start at `http://localhost:5173`
-
-Visit `http://localhost:5173` in your browser to use the application.
 
 ## Usage
 
@@ -292,7 +254,3 @@ MIT License - See LICENSE file for details
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
-
-## Support
-
-For issues and questions, please open an issue on the repository.
